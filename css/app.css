@@ -31,3 +31,10 @@ box-shadow: none;
 .title-bar{
 	background-color: #2980b9;
 }
+
+/*Media queries*/
+@media screen and (max-width: 800px) {
+	a.email{
+		font-size: 30px;
+	}
+}
