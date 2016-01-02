@@ -1,0 +1,33 @@
+a.email{
+    color: white;
+    background: #2980b9;
+    width: 100%;
+    display: block;
+    line-height: 6;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+.thumbnail{
+	-webkit-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	filter: grayscale(1);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.thumbnail:hover{
+	-webkit-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.off-canvas-content{
+box-shadow: none;
+
+}
+.callout{
+	border: none;
+}
+.title-bar{
+	background-color: #2980b9;
+}
