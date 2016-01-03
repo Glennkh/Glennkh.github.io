@@ -1,7 +1,7 @@
 /*Header*/
 #header {
     opacity: 1;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -13,6 +13,12 @@
     background: #fff;
     overflow: hidden;
     letter-spacing: .02em;
+}
+.row{
+	max-width: 1500px;
+}
+.page_content{
+	margin-top: 80px;
 }
 #header a{
 	color: #484848;
@@ -103,6 +109,8 @@ box-shadow: none;
     cursor: pointer;
     position: absolute;
     opacity: 0;
+    width: 100%;
+    height: 100%;
     top: 0;
     -webkit-transition: all 0.45s ease-in-out;
     -moz-transition: all 0.45s ease-in-out;
@@ -114,8 +122,8 @@ box-shadow: none;
     z-index: 10;
     color: #fff;
     position: absolute;
-    width: 600px;
-    height: 360px;
+    width: 100%;
+    height: 100%;
     text-align: center;
     top: 100px;
 }
@@ -125,13 +133,34 @@ box-shadow: none;
 }
 .caption-style-1 .blur {
     background-color: rgba(0,0,0,0.65);
-    height: 360px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
     z-index: 5;
     position: absolute;
 }
-
+#about{
+	padding: 1.3em;
+	position: relative;
+}
+#about img{
+	max-width: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.dark{
+	background-color: #eee;
+	height: 200px;
+}
 /*Media queries*/
+@media screen and (min-width: 1500px){
+	#about{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
 @media screen and (max-width: 800px) {
 	a.email{
 		font-size: 30px;
