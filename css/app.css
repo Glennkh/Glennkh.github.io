@@ -1,4 +1,16 @@
 /*Header*/
+body,h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+.branding{
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
 #header {
     opacity: 1;
     position: fixed;
@@ -6,7 +18,7 @@
     left: 0;
     right: 0;
     bottom: auto;
-    padding: 0 38px;
+    padding: 0 1.3em;
     height: 80px;
     line-height: 80px;
     z-index: 20001;
@@ -123,9 +135,11 @@ box-shadow: none;
     color: #fff;
     position: absolute;
     width: 100%;
-    height: 100%;
     text-align: center;
-    top: 100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+    -ms-transform: translateY(-50%); /* IE 9 */
+    transform: translateY(-50%);
 }
 .caption-style-1{
     position: relative;
@@ -154,6 +168,17 @@ box-shadow: none;
 	background-color: #eee;
 	height: 200px;
 }
+/*footer*/
+#footer{
+    margin: auto;
+    padding: .5em;
+}
+#footer img{
+    opacity: .5;
+}
+#footer img:hover{
+    opacity: 1;
+}
 /*Media queries*/
 @media screen and (min-width: 1500px){
 	#about{
@@ -162,7 +187,14 @@ box-shadow: none;
 	}
 }
 @media screen and (max-width: 800px) {
+        
+    .page_content{
+        margin-top: 0;
+    }
+    #header {
+        position: relative;
+    }
 	a.email{
-		font-size: 30px;
+		font-size: 25px;
 	}
 }
